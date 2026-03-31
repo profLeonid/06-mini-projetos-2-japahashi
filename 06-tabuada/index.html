@@ -11,16 +11,17 @@
   <div class="container">
 
     <a href="../index.html">← Voltar</a>
+    <script src="./app.js"></script>
 
     <h1>Tabuada Estendida</h1>
     <p>Informe um número para gerar as operações de 1 a 10.</p>
 
     <div class="campo">
       <label>Número</label>
-      <input type="number" placeholder="Ex: 7"/>
+      <input id="quantidade" type="number" placeholder="Ex: 7"/>
     </div>
 
-    <button>Gerar Tabuada</button>
+    <button onclick="handleClick()">Gerar Tabuada</button>
 
     <div class="resultado">
       <p class="resultado-titulo">Resultado</p>
@@ -35,20 +36,20 @@
               <th>Divisão</th>
             </tr>
           </thead>
-          <tbody>
+          <tbody id="tbody">
             <tr>
-              <td>1</td>
-              <td>8</td>
-              <td>6</td>
-              <td>7</td>
-              <td>7.00</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
             </tr>
             <tr>
-              <td>2</td>
-              <td>9</td>
-              <td>5</td>
-              <td>14</td>
-              <td>3.50</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
             </tr>
           </tbody>
         </table>

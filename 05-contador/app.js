@@ -1,6 +1,7 @@
+'use strict'
 function criarListaNumeros(quantidade){
 
-    let = listaNumero = []
+    let listaNumero = []
 
     for (let i = 1; i<= quantidade;i++){
 
@@ -12,7 +13,7 @@ function criarListaNumeros(quantidade){
 
 function criarListaPares(quantidade){
     
-    let = listaPares = []
+    let listaPares = []
     
     for(let i = 0; i <= quantidade;i++){
 
@@ -23,7 +24,7 @@ function criarListaPares(quantidade){
 
 function criarListaImpares(quantidade){
 
-    let = listaImpares = []
+    let listaImpares = []
 
     for(let i = 1; i <= quantidade;i++){
         
@@ -35,7 +36,7 @@ function criarListaImpares(quantidade){
 
 function criarListaMutiplos5(quantidade){
 
-    let = listaMultiplos5 = []
+    let listaMultiplos5 = []
 
     for(let i = 1; i <= quantidade; i++){
 
@@ -43,15 +44,16 @@ function criarListaMutiplos5(quantidade){
     }
     return listaMultiplos5
 }
-function criarListaPotencia(){
+
+function criarListaPotencia(quantidade){
     let listaPotencia = []
-
-    for(let i = 1; i <= quantidade; i++){
-
-        listaPotencia.push(2**(i - 1))
+    let potencia = 2
+    let numeroPotencia
+    for (let i = 0; i < quantidade; i++){
+        numeroPotencia = potencia ** i 
+        listaPotencia.push(numeroPotencia)
     }
     return listaPotencia
-
 }
 
 function criarLinha(num,par,impar,mut5,potencia){
